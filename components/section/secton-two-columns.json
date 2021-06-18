@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_section_secton_two_columns",
+  "info": {
+    "name": "secton_two_columns",
+    "icon": "border-all"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.section-metadata",
+      "required": true
+    }
+  }
+}
